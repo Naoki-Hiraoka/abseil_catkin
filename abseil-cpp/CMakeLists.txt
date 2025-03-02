@@ -18,6 +18,7 @@ execute_process(COMMAND
 ExternalProject_Add(
   absl
   GIT_REPOSITORY https://github.com/abseil/abseil-cpp
+  GIT_TAG lts_2024_01_16
   CMAKE_ARGS -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX} -DCMAKE_BUILD_TYPE=Release -DABSL_ENABLE_INSTALL=ON -DBUILD_SHARED_LIBS=ON
   #INSTALL_COMMAND echo "install"
   )
